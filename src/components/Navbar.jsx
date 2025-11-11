@@ -22,6 +22,7 @@ function Navbar() {
                                 <summary className="cursor-pointer select-none">Milestones</summary>
                                 <ul className="absolute right-0 mt-2 w-44 bg-base-100 rounded-box p-2 shadow text-sm z-50">
                                     <li><a href="/m1-inception">MS1: Inception</a></li>
+                                    <li><a href="/m2-elaboration">MS2: Elaboration</a></li>
                                 </ul>
                             </details>
                         </li>
@@ -54,6 +55,7 @@ function Navbar() {
                                 <a className="cursor-default hover:bg-base-100">Milestones</a>
                                 <ul className="p-2">
                                     <li><a href="/m1-inception">MS1: Inception</a></li>
+                                    <li><a href="/m2-elaboration">MS2: Elaboration</a></li>
                                 </ul>
                             </li>
                             <li>

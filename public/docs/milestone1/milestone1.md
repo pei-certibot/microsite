@@ -339,4 +339,6 @@ This design ensures that each service is a stand-alone product, capable of opera
 
 Using this approach, we can achieve service independence, reusability of the services, and simplified data management.
 
-![IMG](IMG)
+![Microservices architecture diagram](../../../docs/milestone1/high_lvl_archv3.png)
+
+*Image: High-level microservices architecture showing independent services, a shared database, and communication flows.*

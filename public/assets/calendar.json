@@ -32,14 +32,17 @@
       "periods": [
         {
           "start": "28/10/2025",
-          "end": "08/11/2025",
+          "end": "10/11/2025",
           "tasks": [
-            { "description": "Refine High-Level Architecture"},
-            { "description": "Refine Mockup Sketch", "responsibles": ["Everyone"] }
+            { "description": "Refine and Expand Mockups"},
+            { "description": "Refine User Stories and Define Use Cases"},
+            { "description": "Initial Component and Container Architecture" },
+            { "description": "Define Relational Database ERD"},
+            { "description": "Refine Functional Requirements"}
           ]
         },
         {
-          "start": "08/11/2025",
+          "start": "10/11/2025",
           "end": "18/11/2025",
           "tasks": [
             { "description": "Define Knowledge Database Structure"},
