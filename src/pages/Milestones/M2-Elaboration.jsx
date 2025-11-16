@@ -5,42 +5,30 @@ import PdfFrame from "../../components/PdfFrame";
 import block from "../../../public/docs/milestone2/milestone2.md?raw"; 
 
 function MS2() {
-  // const pdfLink = "https://www.canva.com/design/DAG2mFpzFNM/4uG7MFzYGpscoAPdSYSQbg/view?embed";
+  const pdfLink = "https://www.canva.com/design/DAG2mFpzFNM/4uG7MFzYGpscoAPdSYSQbg/view?embed";
 
   const md = useMemo(() => new MarkdownIt(), []);
   const content = useMemo(() => {
     const titleMatch = block.match(/^#\s+(.+)/m);
-    const title = titleMatch ? titleMatch[1] : 'Milestone 1';
+    const title = titleMatch ? titleMatch[1] : 'Milestone 2';
     return { title, description: block };
   }, [block]);
 
   return (
-    <div className="px-4 lg:px-20">
-      <div className="flex mb-8 px-8">
-        <div className="w-1/8 relative hidden sm:block">
-          <div className="absolute bottom-0">
-            <BackButton />
+    <div className="px-4 lg:px-50">
+      <BackButton />
+
+      <div className="mx-auto w-full">
+        <div className="h-[calc(100vh-12rem)] mb-12">
+          <PdfFrame path={pdfLink} title="Milestone 2" />
+        </div>
+
+        <section className="documentation-hero text-left pb-24">
+          <div className="markdown-body">
+            <div dangerouslySetInnerHTML={{ __html: md.render(content.description) }} />
           </div>
-        </div>
-        <div className="w-3/4">
-          <h2 className="hidden sm:block">Milestone 2: Elaboration</h2>
-          <h3 className="sm:hidden whitespace-nowrap">Milestone 2: Elaboration</h3>
-        </div>
+        </section>
       </div>
-
-      {/* <div className="mx-auto lg:w-[90%] h-[calc(100vh-12rem)] mb-12">
-        <PdfFrame path={pdfLink} title="Milestone 1" />
-      </div> */}
-
-      <section className="documentation-hero text-left min-h-screen flex items-center justify-center pb-24">
-        <div className="container">
-          <div className="row flex items-center justify-center">
-            <div className="markdown-body w-full">
-              <div dangerouslySetInnerHTML={{ __html: md.render(content.description) }} />
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

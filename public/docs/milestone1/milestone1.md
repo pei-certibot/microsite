@@ -1,6 +1,8 @@
-# 1. State of the Art
+# Milestone 1: Inception
 
-## Tools in the Market
+## 1. State of the Art
+
+### Tools in the Market
 
 | Tool                                            | Focus                                                    | Key Strengths                                                                                                                 |
 | ----------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -9,7 +11,7 @@
 | **Secureframe** | Automated compliance and continuous monitoring           | Automated testing for a broad number of frameworks and user-friendly interfaces                                               |
 | **Sprinto**         | Compliance automation platform for cloud-first companies | Continuous control monitoring, automated evidence collection, real-time compliance tracking, and smooth auditor collaboration  |
 
-## Traditional Compliance Management vs Automated Platforms
+### Traditional Compliance Management vs Automated Platforms
 
 | Aspect                | Traditional Method                                          | Automated Platforms (e.g., Vanta, Drata, Sprinto)        |
 | --------------------- | ----------------------------------------------------------- | -------------------------------------------------------- |
@@ -25,7 +27,7 @@
 Traditional compliance management relies heavily on manual processes, human interpretation, and static documentation.  
 This makes it **time-consuming, error-prone, and hard to scale**, especially for cloud-based environments where configurations change rapidly.
 
-## Traditional vs Automated Platforms vs CertiBot
+### Traditional vs Automated Platforms vs CertiBot
 
 | Aspect               | Traditional Method                                 | Automated Platforms (Vanta, Drata, Sprinto)              | **CertiBot**                                                                                         |
 | -------------------- | -------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -38,7 +40,7 @@ This makes it **time-consuming, error-prone, and hard to scale**, especially for
 | **Scalability**      | Limited to consultant capacity                     | Scales with integrations                                 | **Scales with AI understanding of multiple standards and jurisdictions**                             |
 | **Unique Value**     | Human expertise                                    | Process automation                                       | **Intelligent compliance copilot — interpretation, mapping, and advisory**                           |
 
-### Value Proposition
+#### Value Proposition
 
 While tools like **Vanta, Drata, and Sprinto automate the "doing" of compliance**, **CertiBot automates the "understanding"**.  
 It interprets standards, explains implementation, and helps users act correctly.
@@ -51,11 +53,11 @@ CertiBot combines:
 - **Guidance** — context-aware explanations and examples for implementing specific controls.
 
 
-# 2. Personas
+## 2. Personas
 
-## Maria Lopez
+### Maria Lopez
 
-### Compliance Officer
+#### Compliance Officer
 
 A compliance officer ensures an organization follows relevant laws, regulations, and internal policies by conducting risk assessments, developing controls, monitoring operations, training employees, and investigating violations to prevent legal, financial, and reputational harm.
 
@@ -168,9 +170,9 @@ As a Compliance Officer, I want to be able to log in into an account, so that I 
 - Then: He gets access to a history tab with implementation/chats (or both)
 
 
-## Sophie Martin
+### Sophie Martin
 
-### Internal Auditor
+#### Internal Auditor
 
 An Internal Auditor provides management with independent assurance and advice by evaluating a company's internal controls, risk management, and governance processes to help achieve organizational objectives.
 
@@ -220,9 +222,9 @@ As an Internal Auditor, I want to get an automatic audit report so that I can ve
 - Then: The system generates a report with estimates of compliance coverage
 
 
-## John Doe
+### John Doe
 
-### Compliance Specialist
+#### Compliance Specialist
 
 A Compliance Specialist evaluates an organization's adherence to laws, regulations, and internal policies, identifying risks and gaps through audits and data analysis to ensure operational integrity and prevent legal or financial penalties.
 
@@ -283,9 +285,9 @@ As a Compliance Specialist, I want to visualize mapping coverage across all stan
 - And: It links directly to missing elements
 
 
-# 3. Functional Requirements
+## 3. Functional Requirements
 
-### Decomposing Criteria
+#### Decomposing Criteria
 
 **Given:** The user selects a clause or asks about a specific requirement:
 
@@ -306,7 +308,7 @@ As a Compliance Specialist, I want to visualize mapping coverage across all stan
 - The system must ensure the examples are mapped to the selected standards.
 
 
-### Requirements
+#### Requirements
 
 **Input Handling**
 - The system must allow users to select a compliance clause from a provided list.
@@ -331,7 +333,7 @@ As a Compliance Specialist, I want to visualize mapping coverage across all stan
 - The system shall maintain the context of the user’s selected standard or regulatory framework throughout the session.
 
 
-# 4. Architecture
+## 4. Architecture
 
 We have chosen a microservices architecture where each component is structured in layers with a shared database.
 

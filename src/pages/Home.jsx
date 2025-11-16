@@ -9,7 +9,7 @@ function Home() {
                 <div className="md:hidden w-full md:w-[40%] p-8 md:p-16 md:pt-24 md:pl-48 cursor-default">
                     <h3 className="font-extrabold text-left">Where AI Meets</h3>
                     <h2 className="font-black pb-8">Authenticity</h2>
-                    <h4 className="text-left">An AI-powered assistant that helps organizations implement, verify, and manage compliance with standards automatically.</h4>
+                    <h5 className="text-left">An AI-powered assistant that helps organizations implement, verify, and manage compliance with standards automatically.</h5>
                 </div>
 
                 <div className="hidden md:block  w-full md:w-[40%] p-8 md:p-16 md:pt-24 md:pl-48 cursor-default">
