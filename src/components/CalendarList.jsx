@@ -10,7 +10,7 @@ function TaskList({ tasks = [], keyPrefix = "" }) {
 function CalendarList({ data = { milestones: [] } }) {
   return (
     <div>
-      <div className="hidden md:grid grid-cols-[35%_30%_35%] font-semibold md:px-12 mb-4 mx-auto lg:w-[80%] md:w-full">
+      <div className="hidden md:grid grid-cols-[30%_25%_45%] font-semibold md:px-12 mb-4 mx-auto lg:w-[80%] md:w-full">
         <div className="text-left">Milestone</div>
         <div className="text-left">Date</div>
         <div className="text-left">Task List</div>
@@ -22,7 +22,7 @@ function CalendarList({ data = { milestones: [] } }) {
           <div key={`${mIdx}-${milestone.title}`}>
             {milestone.periods.map((period, pIdx) => (
               <div key={`${mIdx}-${pIdx}`}>
-                <div className="grid grid-cols-1 md:grid-cols-[35%_30%_35%] items-start py-4">
+                <div className="grid grid-cols-1 md:grid-cols-[30%_25%_45%] items-start py-4">
                   <div className="font-semibold underline"> {pIdx === 0 && ( <a href={milestone.url}> {milestone.title} </a> )} </div>
                   <div>{period.start} - {period.end}</div>
                   <div> <TaskList tasks={period.tasks} keyPrefix={`${mIdx}-${pIdx}`} /> </div>

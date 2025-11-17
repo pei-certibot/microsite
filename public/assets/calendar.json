@@ -66,18 +66,18 @@
           "start": "19/11/2025",
           "end": "02/12/2025",
           "tasks": [
-            { "description": "Knowledge Extraction"},
-            { "description": "Norm Review UI"},
-            { "description": "Define Knowledge Non Relational Database"}
+            { "description": "Knowledge Extraction", "responsibles": ["Gonçalo Silva", "Filipe Marques"] },
+            { "description": "Norm Review UI" , "responsibles": ["Rodrigo Santos", "Gonçalo Ribau"] },
+            { "description": "Define Knowledge Non-Relational Database", "responsibles": ["António Santos"]}
           ]
         },
         {
           "start": "02/12/2025",
           "end": "16/12/2025",
           "tasks": [
-            { "description": "Chatbot LLM Integration"},
-            { "description": "Chatbot (Back-end, Front-end, Endpoints)"},
-            { "description": "Optional: Chatbot History / Authentication"}
+            { "description": "Chatbot Implementation", "responsibles": ["Gonçalo Ribau", "Filipe Marques", "Rodrigo Santos"] },
+            { "description": "Users / Authentication Implementation", "responsibles": ["Rodrigo Santos"] },
+            { "description": "Chatbot History / Storage Implementation", "responsibles": ["Gonçalo Silva"] }
           ]
         }
       ]
@@ -90,10 +90,12 @@
           "start": "16/12/2025",
           "end": "TBD",
           "tasks": [
-            {"description": "Define API endpoints for the Norms Review service"},
-            { "description": "Develop admin norm review page backend" },
-            { "description": "Develop Norm Review UI" },
-            { "description": "Organization Compliance Integration Backend Dev (Dashboards and graphs) and UI" },
+
+
+
+            {"description": "AI Assistant Service Feature Expansion" },
+            { "description": "Automated Verification of Compliance Service Development" },
+            { "description": "Test Season!" },
             { "description": "Add additional features..." }
           ]
         }
