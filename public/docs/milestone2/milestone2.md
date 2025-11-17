@@ -94,9 +94,9 @@ This image shows that Gemma3 appears to have a similar score to DeepSeek R1 with
 | Instruction adherence | MT-Bench, AlpacaEval | Evaluates how well the model follows extraction-style instructions. | Important if you rely on prompt-based schema filling. | > 7.5 (LMSYS) scale |
 
 
-## 2. Functional Requirements (Organized by UI)
+## 2. Functional Requirements
 
-### 2.1. Chatbot UI
+### 2.1. Chatbot
 
 #### 2.1.1. Input Handling
 1. The system must allow users to select a compliance clause from a provided list.
@@ -158,7 +158,7 @@ This image shows that Gemma3 appears to have a similar score to DeepSeek R1 with
 
 ---
 
-### 2.2. Norm Review UI
+### 2.2. Norm Review
 
 #### 2.2.1. Mapping Management Interface
 1. The system must provide an interface for Compliance Specialists to view, create, edit, approve, or delete information mappings used by the AI.

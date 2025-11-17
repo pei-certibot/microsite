@@ -86,7 +86,7 @@ function MS2() {
             <div className="sticky top-24 pr-2">
               <div className="idx">
                 <nav className="text-sm">
-                  <ul> {toc.map((item) => ( <li key={item.id}  style={{ marginLeft: (item.level - 1) * 16, marginTop: 8, marginBottom: 8, }}> <a href={`#${item.id}`} className="hover:underline">{"- "}{item.text}</a> </li> ))} </ul>
+                  <ul> {toc.map((item) => ( <li key={item.id}  style={{ marginLeft: (item.level - 1) * 16, marginTop: 8, marginBottom: 8, }}> <a href={`#${item.id}`} className="hover:underline">{item.text}</a> </li> ))} </ul>
                 </nav>
               </div>
             </div>
@@ -97,7 +97,7 @@ function MS2() {
               <div className="idx">
                 <nav className="text-sm">
                   <ul>
-                    {toc.map((item) => ( <li key={item.id} style={{ marginLeft: (item.level - 1) * 16, marginTop: 8, marginBottom: 8, }} > <a href={`#${item.id}`} className="hover:underline"> {"- "}{item.text} </a> </li> ))}
+                    {toc.map((item) => ( <li key={item.id} style={{ marginLeft: (item.level - 1) * 16, marginTop: 8, marginBottom: 8, }} > <a href={`#${item.id}`} className="hover:underline"> {item.text} </a> </li> ))}
                   </ul>
                 </nav>
               </div>

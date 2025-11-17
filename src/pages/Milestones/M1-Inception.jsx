@@ -59,18 +59,12 @@ function MS1() {
 
       const aRect = asideEl.getBoundingClientRect();
       const isAbove = aRect.top < 0;
-      if (!isAbove) {
-        setShowFixed(false);
-        return;
-      }
+      if (!isAbove) { setShowFixed(false); return; }
 
       setFixedLeft(Math.round(aRect.left));
 
       let top = 24;
-      if (pdfEl) {
-        const pRect = pdfEl.getBoundingClientRect();
-        top = Math.max(24, Math.round(pRect.bottom + 8));
-      }
+      if (pdfEl) { const pRect = pdfEl.getBoundingClientRect(); top = Math.max(24, Math.round(pRect.bottom + 8)); }
       setFixedTop(top + FLOAT_OFFSET);
       setShowFixed(true);
     }
@@ -78,10 +72,7 @@ function MS1() {
     update();
     window.addEventListener('scroll', update, { passive: true });
     window.addEventListener('resize', update);
-    return () => {
-      window.removeEventListener('scroll', update);
-      window.removeEventListener('resize', update);
-    };
+    return () => { window.removeEventListener('scroll', update); window.removeEventListener('resize', update); };
   }, []);
 
   return (
@@ -100,19 +91,7 @@ function MS1() {
                 <nav className="text-sm">
                   <ul>
                     {toc.map((item) => (
-                      <li
-                        key={item.id}
-                        style={{
-                          marginLeft: (item.level - 1) * 16,
-                          marginTop: 8,
-                          marginBottom: 8,
-                        }}
-                      >
-                        <a href={`#${item.id}`} className="hover:underline">
-                          {' - '}
-                          {item.text}
-                        </a>
-                      </li>
+                      <li key={item.id} style={{ marginLeft: (item.level - 1) * 16, marginTop: 8, marginBottom: 8, }} > <a href={`#${item.id}`} className="hover:underline"> {item.text} </a> </li>
                     ))}
                   </ul>
                 </nav>
@@ -121,34 +100,11 @@ function MS1() {
           </aside>
 
           {showFixed && fixedLeft != null && (
-            <div
-              className="hidden md:block"
-              style={{
-                position: 'fixed',
-                left: `${fixedLeft}px`,
-                top: `${fixedTop}px`,
-                width: '12rem',
-                zIndex: 60,
-              }}
-            >
+            <div className="hidden md:block" style={{ position: 'fixed', left: `${fixedLeft}px`, top: `${fixedTop}px`, width: '12rem', zIndex: 60, }} >
               <div className="idx">
                 <nav className="text-sm">
                   <ul>
-                    {toc.map((item) => (
-                      <li
-                        key={item.id}
-                        style={{
-                          marginLeft: (item.level - 1) * 16,
-                          marginTop: 8,
-                          marginBottom: 8,
-                        }}
-                      >
-                        <a href={`#${item.id}`} className="hover:underline">
-                          {' - '}
-                          {item.text}
-                        </a>
-                      </li>
-                    ))}
+                    {toc.map((item) => ( <li key={item.id} style={{ marginLeft: (item.level - 1) * 16, marginTop: 8, marginBottom: 8, }} > <a href={`#${item.id}`} className="hover:underline"> {item.text} </a> </li> ))}
                   </ul>
                 </nav>
               </div>
