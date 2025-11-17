@@ -8,20 +8,20 @@
           "start": "29/09/2025",
           "end": "14/10/2025",
           "tasks": [
-            { "description": "Personas"},
-            { "description": "User Stories"},
-            { "description": "State of the Art Analysis"},
-            { "description": "Microsite"}
+            { "description": "Define Personas", "responsibles": ["Filipe Marques"] },
+            { "description": "Define User Stories", "responsibles": ["Gonçalo Ribau"] },
+            { "description": "State of the Art Analysis", "responsibles": ["Gonçalo Silva"] },
+            { "description": "Microsite Development", "responsibles": ["Rodrigo Santos"] }
           ]
         },
         {
           "start": "14/10/2025",
           "end": "28/10/2025",
           "tasks": [
-            { "description": "Functional Requirements"},
             { "description": "Initial Mockup Sketch", "responsibles": ["Everyone"] },
-            { "description": "Calendar Planning"},
-            { "description": "Presentation" }
+            { "description": "Initial Architecture Sketch", "responsibles": ["Filipe Marques"] },
+            { "description": "Calendar Planning", "responsibles": ["Everyone"] },
+            { "description": "Presentation", "responsibles": ["Everyone"] }
           ]
         }
       ]
@@ -34,19 +34,26 @@
           "start": "28/10/2025",
           "end": "10/11/2025",
           "tasks": [
-            { "description": "Refine and Expand Mockups"},
-            { "description": "Refine User Stories and Define Use Cases"},
-            { "description": "Initial Component and Container Architecture" },
-            { "description": "Define Relational Database ERD"},
-            { "description": "Refine Functional Requirements"}
+            { "description": "Refine and Expand Mockups", "responsibles": ["Rodrigo Santos"] },
+            { "description": "Refine User Stories", "responsibles": ["António Santos", "Gonçalo Silva"] },
+            { "description": "Define Use Cases", "responsibles": ["Gonçalo Ribau"] },
+            { "description": "Initial Component and Container Architecture", "responsibles": ["Filipe Marques"]  },
+            { "description": "Refine Functional Requirements", "responsibles": ["Filipe Marques"] }
           ]
         },
         {
           "start": "10/11/2025",
           "end": "18/11/2025",
           "tasks": [
-            { "description": "Define Knowledge Database Structure"},
-            { "description": "Leverage LLM to build compliance guidance from norms"}
+            { "description": "LLMs State of The Art Analysis", "responsibles": ["António Santos"] },
+            { "description": "Define Relational Database ERD", "responsibles": ["Rodrigo Santos"] },
+            { "description": "Define Knowledge Database Structure" , "responsibles": ["António Santos"] },
+            { "description": "Define Non Functional Requirements", "responsibles": ["Filipe Marques"] },
+            { "description": "State of the Art Tech Stack Analysis", "responsibles": ["António Santos"] },
+            { "description": "Workflow Diagrams Sketch", "responsibles": ["Gonçalo Silva"] },
+            { "description": "Risk and Cost Analysis", "responsibles": ["Gonçalo Silva"] },
+            { "description": "Work Planning", "responsibles": ["Gonçalo Ribau"] },
+            { "description": "Presentation", "responsibles": ["Everyone"] }
           ]
         }
       ]
@@ -57,20 +64,20 @@
       "periods": [
         {
           "start": "19/11/2025",
-          "end": "05/12/2025",
+          "end": "02/12/2025",
           "tasks": [
-            { "description": "Refine Knowledge Extraction Using LLM"},
-            { "description": "Define ChatBot API endpoints"},
-            { "description": "Define API endpoints for the Knowledge extraction service"}
+            { "description": "Knowledge Extraction"},
+            { "description": "Norm Review UI"},
+            { "description": "Define Knowledge Non Relational Database"}
           ]
         },
         {
-          "start": "05/12/2025",
+          "start": "02/12/2025",
           "end": "16/12/2025",
           "tasks": [
-            { "description": "Develop Chatbot Backend and UI"},
-            { "description": "Define Users Relational Database"},
-            { "description": "Chatbot History Format / Storage"}
+            { "description": "Chatbot LLM Integration"},
+            { "description": "Chatbot (Back-end, Front-end, Endpoints)"},
+            { "description": "Optional: Chatbot History / Authentication"}
           ]
         }
       ]
